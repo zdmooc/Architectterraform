@@ -1,0 +1,99 @@
+The remote-exec provisioner has a default behavior where it marks resources as tainted if it fails during the current ‘Terraform apply’ process.
+
+(State whether this is True or False)
+
+1 / 1 point
+
+TRUE
+
+
+FALSE
+
+Correct
+If the remote-exec fails during the current ‘terraform apply’, that resource will be marked as tainted in the terraform statefile. For more information, refer to the “AdvancedProvisioners Lecture”.
+
+2.
+Question 2
+Complete the ‘remote-exec’ provisioner with a valid keyword
+
+provisioner "remote-exec" {
+
+ on_failure = ____________
+
+ inline = [
+
+ "sudo yum -y install nano
+
+ ]
+
+ }
+
+1 / 1 point
+
+Retry
+
+
+Rollback
+
+
+Continue
+
+
+Ignore
+
+Correct
+It is the right syntax which enables terraform to continue even if the remote-exec fails . For more information, refer to the “Advanced Provisioners Lecture”.
+
+3.
+Question 3
+Choose the attribute in the remote-exec provisioner that helps to connect to a machine.
+
+1 / 1 point
+
+key
+
+
+connection_name
+
+
+key_name
+
+Correct
+This attribute allows terraform to connect to a remote machine using the supported method . For more information, refer to the “Provisioners Lecture”.
+
+4.
+Question 4
+What is the use of remote-exec provisioner?
+
+1 / 1 point
+
+create remote resource
+
+
+create local resources
+
+
+run or install script in resources after it is created by terraform
+
+
+run or install script in machine where terraform is run
+
+Correct
+When a resource is created and requires a script or steps of commands to be executed , remote-exec can be used . For more information, refer to the “Provisioners Lecture”.
+
+5.
+Question 5
+Terraform taint will ____________the resource on the next terraform apply
+
+1 / 1 point
+
+delete
+
+
+delete and recreate
+
+
+ignore
+
+
+validate

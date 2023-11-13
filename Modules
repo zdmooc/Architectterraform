@@ -1,0 +1,107 @@
+Which of the following module sources value refers to the main branch in github? [Select all that apply]
+
+1 / 1 point
+
+source = “github.com/user-aws1565/example”
+
+Correct
+It is a valid syntax that refers to the main branch of Github. For more information, refer to the “Module Sources Lecture''.
+
+
+source = ”git::https://guthub.com/user-aws1565/example.git”
+
+Correct
+It is a valid syntax that refers to the main branch of Github. For more information, refer to the “Module Sources Lecture”.
+
+
+source = “github.com/user-aws1565/example>ref=main”
+
+Correct
+It is a valid syntax that refers to the main branch of Github. For more information, refer to the “Module Sources Lecture”.
+
+
+source = “github.com/user-aws1565/example/main”
+
+2.
+Question 2
+Terraform allows us to import existing infrastructure. It will automatically create the ____________ file.
+
+1 / 1 point
+
+variable
+
+
+main.tf
+
+
+State
+
+
+terraform
+
+Correct
+It will automatically create a state file. For more information, refer to the “Import resources Introduction Lecture”.
+
+3.
+Question 3
+Which option is true about the following terraform command?
+
+terraform import aws.instance.myec2 i-23a58927d323
+
+1 / 1 point
+
+It imports the state of ec2 with instance-id ‘i-23a58927d323’ after terminated
+
+
+Creates an ec2 with instance-id ‘i-23a58927d323’ on the next ‘terraform apply’ and import the state
+
+
+It imports the current state of ec2 and update it with new instance-id on next ‘terraform apply’
+
+
+It imports the current state of the ec2 with instance-id ‘i-23a58927d323’ 
+
+Correct
+Current state and desired state are matched, by using instance id as reference. For more information, refer to the “Import resources Lecture''.’
+
+4.
+Question 4
+From where the verified registry modules are downloaded when you execute 'terraform init'?
+
+1 / 1 point
+
+path in Local machine
+
+
+terraform cloud
+
+
+Github
+
+
+Fileserver
+
+Correct
+It is not downloaded from Github. For more information, refer to the “Registry Modules Lecture”.
+
+5.
+Question 5
+
+____________modules are provided by Hashicorp 
+
+1 / 1 point
+
+Root
+
+
+Child
+
+
+Data
+
+
+Registry
+
+Correct
+These are provided by Hashicorp. For more information, refer to the “Registry Modules Lecture”.
+

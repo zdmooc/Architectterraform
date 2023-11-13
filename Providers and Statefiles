@@ -1,0 +1,73 @@
+ow can you initialize the following provider?
+
+
+terraform {
+
+required_providers {
+
+aws = {
+
+version = ">= 2.7.0"
+
+source = "hashicorp/aws"
+
+}
+
+}
+
+}
+
+1 / 1 point
+
+terraform aws init
+
+
+terraform provider aws init
+
+
+terraform init
+
+
+terraform provider init
+
+Correct
+By using this command, we can initialize any provider.
+
+2.
+Question 2
+Which of the following is not the responsibility of Provider Plugins?
+
+1 / 1 point
+
+Initialization of any included libraries helps to make API calls
+
+
+Authentication with the Infrastructure Provider
+
+
+Defining Resources that map to specific Services
+
+
+Plan execution
+
+Correct
+This is the responsibility of Terraform Core. Hence it is incorrect.
+
+Refer to 'Terraform Providers’ lecture
+
+3.
+Question 3
+Providers is one of the types of Terraform plugins. State True or False.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+The statement is true.
+
+
+

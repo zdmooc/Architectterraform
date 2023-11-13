@@ -1,0 +1,78 @@
+What is a multi-cloud deployment?
+
+1 / 1 point
+
+The possibility to run a simple .tf into multiple clouds using a single provider to deploy into multiple cloud providers
+
+
+The possibility to run your Terraform code using multiple cloud providers to deploy your infrastructure into multiple cloud providers
+
+
+The possibility to run your Terraform code using a single-global provider to deploy your infrastructure into multiple cloud providers
+
+
+The possibility to run your Terraform code by other tools such as Amazon Cloudformation.
+
+Correct
+The idea of multi-cloud deployment is to run our Terraform code, using multiple providers like AWS, GCP, or Azure, and deploy the infrastructure into multiple clouds in a single Terraform deployment.
+
+2.
+Question 2
+One of the main benefits of IaC is versioning. What happens if you don’t specify a version in your module block definition?
+
+1 / 1 point
+
+The latest version will be used
+
+
+An error will occur as you have to specify a version
+
+
+Terraform will prompt a message listing all the versions available where you have to type which one you want
+
+
+Terraform will be cloned all the versions available but the latest version will be used
+
+Correct
+By default, the latest version of the module will be used if you don’t specify a version in the block definition.
+
+3.
+Question 3
+
+How does Terraform build the IaC in an efficient manner?
+
+1 / 1 point
+
+Terraform builds a resource graph to determine resource dependencies and creates or modifies non-dependent resources in parallel.
+
+
+Terraform builds the IaC based on step-by-step instructions provided on the Terraform files.
+
+
+Terraform builds all the dependencies based on a dependency tree written in a JSON file.
+
+
+All of the above
+
+Correct
+The above feature helps Terraform to provision resources efficiently.
+
+4.
+Question 4
+Which of the following is the correct Terraform workflow?
+
+1 / 1 point
+
+terraform apply > terraform init > terraform plan
+
+
+terraform init > terraform plan 
+
+
+terraform init > terraform plan > terraform apply
+
+
+terraform plan > terraform apply > terraform init
+
+Correct
+This is the correct Terraform workflow.

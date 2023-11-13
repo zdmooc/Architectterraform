@@ -1,0 +1,90 @@
+Which command will format the terraform configuration files?
+
+1 / 1 point
+
+terraform init - - format
+
+
+terraform apply - - format
+
+
+terraform fmt
+
+
+terraform format
+
+Correct
+It is the correct command. For more information, refer to the “Formatting Lecture''.
+
+2.
+Question 2
+Choose the correct syntax, which implies ‘if the condition is met, count is equal to 2’?
+
+1 / 1 point
+
+count = var.flag == true ? 2:0
+
+
+count = var.flag = true ? 2:0
+
+
+count = flag == true ? 2:0
+
+
+count = var.flag == true ? 0:2
+
+Correct
+Correct syntax. For more information, refer to the “Conditional Expression Lecture”.
+
+3.
+Question 3
+A lookup function retrieves the value of a single element from a map, given its key.
+
+(State whether this is True or False)
+
+1 / 1 point
+
+TRUE
+
+
+FALSE
+
+Correct
+A lookup function will search for key in the map and retrieve the respective value. For more information, refer to the “Functions Lecture”.
+
+4.
+Question 4
+____________expression uses a concise way to get a list of values.
+
+1 / 1 point
+
+Split
+
+
+Star
+
+
+Splat
+
+
+Max
+
+Correct
+It is the right expression . For more information, refer to the “Advanced Provisioners Lecture”.
+
+5.
+Question 5
+Choose the special symbol which is used as splat expression in Terraform
+
+1 / 1 point
+
+#
+
+
+*
+
+
+%
+
+
+x

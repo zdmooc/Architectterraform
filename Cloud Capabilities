@@ -1,0 +1,112 @@
+Question 1
+
+Which file formats are supported by aws cloudformation?
+
+1 / 1 point
+
+HCL
+
+
+Text
+
+
+.cf
+
+
+JSON
+
+Correct
+It is a supported format. For more information, refer to the “Cloud Formation Lecture”.
+
+2.
+Question 2
+
+Which option in AWS CloudFormation will allow you to drag and drop resource icons to create a template?
+
+1 / 1 point
+
+Template is ready
+
+
+Use a sample template
+
+
+Create template in Designer
+
+
+None of the above
+
+Correct
+This allows us to drag and drop resources and create a template based on the architecture. For more information, refer to the “Cloud Formation Lecture”.
+
+3.
+Question 3
+
+What is the attribute ‘skip_final_snapshot = true’ in the RDS instance resource block ?
+
+1 / 1 point
+
+Takes a final snapshot after database is created
+
+
+Takes a final snapshot after database is deleted
+
+
+No final snapshot will be taken after database is created
+
+
+No final snapshot will be taken when database is deleted
+
+Correct
+Final snapshot is created when a RDS instance is deleted and this will skip that. For more information, refer to the “CreateDatabase- Terraform Cloud Lecture”.
+
+4.
+Question 4
+What does the following policy do?
+
+import "tfplan"
+
+
+main = rule {
+
+ all tfplan.resources.aws*instance as *, instances {
+
+ all instances as \_, r {
+
+ (length(r.applied.tags) else 0) > 0
+
+ }
+
+ }
+
+}
+
+1 / 1 point
+
+Policy check shows warning if aws instance configuration is to create instance without tag
+
+
+Policy check fails if aws instance configuration is to create instance without tag
+
+
+Policy check shows warning if aws instance configuration is to create instance with tag
+
+
+Policy check fails if aws instance configuration is to create instance with tag
+
+Correct
+Plan fails if the aws instance configuration is to create an instance without tag . For more information, refer to the “Sentinel Lecture”.
+
+5.
+Question 5
+The ‘Delete Workspace’ option in Terraform Cloud deletes the infrastructure created by Terraform. (State whether this is True or False)
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+It will delete Workspace and variables but not the resources created by Terraform. For more information, refer to the “Terraform Cloud Lecture”.

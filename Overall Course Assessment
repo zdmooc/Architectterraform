@@ -1,0 +1,218 @@
+Question 1
+In the Terraform module section, Which of the following keyword is not a Meta-Argument for modules in Terraform?
+
+1 / 1 point
+
+count
+
+
+provider
+
+
+for_each
+
+
+Input
+
+Correct
+This is not a Meta-Argument for modules in Terraform.
+
+2.
+Question 2
+Which of the following extensions is recognized by Terraform to fetch a module using an URL endpoint?
+
+1 / 1 point
+
+zip
+
+
+tar.gz
+
+
+tar.xz
+
+
+All of the above
+
+Correct
+zip, tar.gz, tar.xz those extensions are recognized by Terraform to fetch a module using an URL endpoint.
+
+3.
+Question 3
+
+How can we forcefully use a Terraform version in your code?
+
+1 / 1 point
+
+Using the meta-argument required_versionin the terraform block
+
+
+Using the meta-argument required_versionin the provider block
+
+
+Using the meta-argument version in the terraform block
+
+
+Using the meta-argument version in the provider block
+
+Correct
+You can force to use a particular version of Terraform using the meta-argument required_version in the terraform block.
+
+4.
+Question 4
+
+Which provisioner you should use to execute a script in a remote resource? 
+
+1 / 1 point
+
+Use a local-exec provisioner with ssh command inside.
+
+
+Use an ssh-provisioner and add the command to be executed
+
+
+Use a remote-exec provisioner to execute the script required
+
+
+All the above
+
+Correct
+remote-exec is the provider defined to execute a script or other operations remotely after the resource is created.
+
+5.
+Question 5
+
+What are all the arguments and meta-arguments that you can use in a module block?
+
+1 / 1 point
+
+source and version
+
+
+source, version, providers
+
+
+source, version, count, for_each, providers, and depends_on
+
+
+source, version, count, for_each, providers, and depend_at
+
+Correct
+These are the complete arguments or meta-arguments that can be used in a module block.
+
+6.
+Question 6
+You are a DevOps Engineer and you want to automate the provision of your IaC using Jenkins Pipelines and Terraform. After checkout, the repository with your Terraform code, What would be the next step to be executed on your Pipeline to work with Terraform and initialize the terraform work directory?
+
+1 / 1 point
+
+terraform validate
+
+
+terraform init
+
+
+terraform plan
+
+
+terraform apply
+
+Correct
+Every time that we check out the infrastructure from a version control we must initialize the terraform code using terraform init.
+
+7.
+Question 7
+
+Terraform will ask you in an interactive approval of your infrastructure when executing terraform apply. How can you skip this approval?
+
+1 / 1 point
+
+terraform apply -force=yes
+
+
+terraform apply -yes
+
+
+terraform apply -approve=yes
+
+
+terraform apply -auto-approve
+
+Correct
+You can use the flag -auto-approve to skip the interactive approval of your terraform apply execution
+
+8.
+Question 8
+You are the DevOps Team Lead of a company and you have to define multiple environments (prod, stg, dev). You read about Terraform workspaces to isolate different terraform states and you want to implement them in your infrastructure as code definition. You already have different states stored locally per environment. How can you associate these local states with a new workspace?
+
+1 / 1 point
+
+terraform workspace new state -state=prod.tfstate prod
+
+ terraform workspace new state -state=stg.tfstate stg
+
+ terraform workspace new state -state=dev.tfstate dev
+
+
+terraform state new -state=prod.tfstate prod
+
+ terraform state new -state=stg.tfstate stg
+
+ terraform state new -state=dev.tfstate dev
+
+
+terraform workspace -state=prod.tfstate prod
+
+ terraform workspace -state=stg.tfstate stg
+
+ terraform workspace -state=dev.tfstate dev
+
+
+terraform workspace new -state=prod.tfstate prod
+
+ terraform workspace new -state=stg.tfstate stg
+
+ terraform workspace new -state=dev.tfstate dev
+
+Correct
+This is the incorrect syntax as per the requirements.
+
+9.
+Question 9
+What is the best way to associate multiple Terraform states with a single configuration in a single backend?
+
+1 / 1 point
+
+Make use of Terraform workspaces
+
+
+Make use of different backend tfvars files configuration
+
+
+Make use of the multiple providers
+
+
+Make use of a multi-state terraform plugin
+
+Correct
+Multiple states in a single backend and configuration can be associated with Terraform Workspaces and this is one of the best benefits of using Workspaces. 
+
+10.
+Question 10
+The cloud team manager has asked team members to create all resources using Terraform and also asked to maintain existing resources using Terraform. How can this be implemented?
+
+1 / 1 point
+
+Resources that are created manually cannot be handled by Terraform as Terraform didn’t create those resources.
+
+
+Usingterraform importcommand resources can be imported and can be handled going forward.
+
+
+Delete the existing resources and create new resources with the same configuration.
+
+
+Use the cloud provider's native IaC tool to obtain that state and add that state to terraform state file.
+
+Correct
+terraform import can be used to import existing resources state and can handle going forward.
